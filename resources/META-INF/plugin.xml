@@ -1,0 +1,31 @@
+<idea-plugin>
+    <id>com.your.company.unique.plugin.id</id>
+    <name>Dino progress bar</name>
+    <version>1.0</version>
+    <vendor email="tulesha_xochet_pit@mail.ru" url="http://www.Tulesha.com">TuleshaCompony</vendor>
+
+    <description><![CDATA[
+      Plugin for intellij idea to replacing the load bar<br>
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <application-components>
+        <component>
+            <implementation-class>
+                com.dinoProgressBar.DinoApp
+            </implementation-class>
+        </component>
+    </application-components>
+
+
+</idea-plugin>
